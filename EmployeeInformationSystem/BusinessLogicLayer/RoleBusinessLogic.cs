@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace BusinessLogicLayer
 {
-    class RoleBusinessLogic
+    public class RoleBusinessLogic
     {
         private RoleDB objDB;
 

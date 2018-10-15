@@ -1,10 +1,5 @@
 ﻿using BusinessObjectLayer;
-using DataAccessLayer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BusinessLogicLayer;
 
 namespace ConsoleUI
 {
@@ -12,9 +7,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            RoleDB R = new RoleDB();
-            R.Insert(new Role() { RoleName = "Manager", RoleCode = "M" });
-            R.Save();            
+            RoleBusinessLogic R = new RoleBusinessLogic();
+            R.Insert(new Role() { RoleName = "User", RoleCode = "U" });           
         }
     }
 }
