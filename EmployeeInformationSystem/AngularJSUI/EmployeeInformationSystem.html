@@ -5,6 +5,57 @@
     <title>Employee Information System</title>
 </head>
 <body>
-    <h1>Welcome to employee information system</h1>
+    <div id="wrapper" class="active">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a id="menu-toggle" href="#">
+                        Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li class="active"><a href="#/Home">Home <span style="font-size:16px;" class="pull-right glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#/EmployeeManagement">Employee Mgmt<span style="font-size:16px;" class="pull-right glyphicon glyphicon-tasks"></span></a></li>
+                <li><a href="#/EmployeeProfile">Employee Profile<span style="font-size:16px;" class="pull-right glyphicon glyphicon-pencil"></span></a></li>
+                <li><a href="#/Logout">Logout<span style="font-size:16px;" class="pull-right glyphicon glyphicon-log-out"></span></a></li>
+                <li><a href="#/Login">Login<span style="font-size:16px;" class="pull-right glyphicon glyphicon-log-in"></span></a></li>
+                <li><a href="#">Welcome, FirstName<span style="font-size:16px;" class="pull-right glyphicon glyphicon-user"></span></a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Page content will come here</h1>
+                        <div ng-view="">
+                            <p class="well lead">An Experiment using the sidebar template from startbootstrap.com which I integrated in my website (<a href="http://animeshmanglik.name">animeshmanglik.name</a>)</p>
+                            <p class="well lead">Click on the Menu to Toggle Sidebar . Hope you enjoy it!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <footer>
+                <center><p>&copy; 2018 My ASP.NET AngularJS Application</p></center>
+            </footer>
+            <blockquote class="pull-right">
+                <p>No engineer should leave their country for hunting the job</p>
+                <small><a href="https://ai-face-detection.herokuapp.com" target="_blank">Face Detection written by React + Nodes</a></small>
+            </blockquote>
+        </div>
+    </div>
 </body>
 </html>
+<script src="Scripts/jquery-3.0.0.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<link href="Content/bootstrap.min.css" rel="stylesheet" />
+<link href="Content/bootstrap.custom.css" rel="stylesheet" />
+<script src="EmployeeInformationSystem.js"></script>
