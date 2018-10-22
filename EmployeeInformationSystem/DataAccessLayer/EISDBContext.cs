@@ -8,6 +8,7 @@ namespace DataAccessLayer
         public EISDBContext() : base("EmployeeInformationSystem")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<EISDBContext, DataAccessLayer.Migrations.Configuration>());
+            Configuration.ProxyCreationEnabled = false;
         }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Employee> Employees { get; set; }
