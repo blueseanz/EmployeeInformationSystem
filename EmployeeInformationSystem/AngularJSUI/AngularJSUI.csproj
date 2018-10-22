@@ -77,6 +77,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\loading-bar.css" />
     <Content Include="Content\loading-bar.min.css" />
+    <Content Include="EmployeeInformationSystem.html" />
+    <Content Include="EmployeeInformationSystem.js" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -123,6 +125,16 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Views\Common\Home\Home.html" />
+    <Content Include="Views\Common\Home\Home.js" />
+    <Content Include="Views\Common\Login\Login.html" />
+    <Content Include="Views\Common\Login\Login.js" />
+    <Content Include="Views\Common\RecoverPassword\RecoverPassword.html" />
+    <Content Include="Views\Common\RecoverPassword\RecoverPassword.js" />
+    <Content Include="Views\Employee\EmployeeMgmt\EmployeeMgmt.html" />
+    <Content Include="Views\Employee\EmployeeMgmt\EmployeeMgmt.js" />
+    <Content Include="Views\Employee\EmployeeUpdate\EmployeeUpdate.html" />
+    <Content Include="Views\Employee\EmployeeUpdate\EmployeeUpdate.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -157,6 +169,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
