@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="appEIS">
 <head>
     <meta charset="utf-8" />
     <title>Employee Information System</title>
@@ -32,10 +32,9 @@
             <div class="page-content inset">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Page content will come here</h1>
+                        {{1+2}}
                         <div ng-view="">
-                            <p class="well lead">An Experiment using the sidebar template from startbootstrap.com which I integrated in my website (<a href="http://animeshmanglik.name">animeshmanglik.name</a>)</p>
-                            <p class="well lead">Click on the Menu to Toggle Sidebar . Hope you enjoy it!</p>
+
                         </div>
                     </div>
                 </div>
@@ -54,8 +53,16 @@
     </div>
 </body>
 </html>
-<script src="Scripts/jquery-3.0.0.min.js"></script>
+
+<script src="Scripts/jquery-1.9.1.min.js"></script>t>
 <script src="Scripts/bootstrap.min.js"></script>
 <link href="Content/bootstrap.min.css" rel="stylesheet" />
 <link href="Content/bootstrap.custom.css" rel="stylesheet" />
+<script src="Scripts/angular.min.js"></script>
+<script src="Scripts/angular-route.min.js"></script>
 <script src="EmployeeInformationSystem.js"></script>
+<script src="Views/Common/Home/Home.js"></script>
+<script src="Views/Common/Login/Login.js"></script>
+<script src="Views/Common/RecoverPassword/RecoverPassword.js"></script>
+<script src="Views/Employee/EmployeeMgmt/EmployeeMgmt.js"></script>
+<script src="Views/Employee/EmployeeUpdate/EmployeeUpdate.js"></script>
