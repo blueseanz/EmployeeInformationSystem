@@ -2,10 +2,12 @@
 using BusinessObjectLayer;
 using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 
 namespace API.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class EmployeeController : ApiController
     {
         EmployeeBusinessLogic employeeObjBs;
