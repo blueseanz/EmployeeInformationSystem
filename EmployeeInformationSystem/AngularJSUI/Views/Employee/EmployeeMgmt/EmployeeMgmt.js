@@ -21,5 +21,9 @@ appEIS.controller('employeeMgmtController', function myfunction($scope, employee
         $scope.Emps = result;
     });
 
+    $scope.Sort = function (col) {
+        $scope.key = col;
+        $scope.AscOrDesc = !$scope.AscOrDesc;
+    };
   
 });
